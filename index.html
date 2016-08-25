@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.) styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <link rel="stylesheet" href="/styles/main.min.css">
+        <link rel="stylesheet" href="/styles/custom.css">
+        <!-- endbuild -->
+    </head>
+
+    <body>
+
+        <div ng-include="'/views/common/header.html'"></div>
+        <section class="page-wrap">
+            <div class="page-wrap__inner aem-breadcrumb">
+                <div class="row head-breadcrumb">
+                <div class="col-md-12 header">
+					<ol class="breadcrumb">
+						<li><a href="#">Home</a></li>
+					</ol>
+				</div>
+               	<div class="col-md-1 col-xs-3 col-sm-1 help-icon">
+                  	<a id="fromRight" class="navbar-brand" href="#" data-direction="right">
+						<i class="fa fa-question-circle-o help" aria-hidden="true"></i>
+				  	</a>
+                </div>
+			</div>
+                    <div ui-view></div>
+                </div>
+            </section>
+            <!-- <favorites></favorites>-->
+            <div ng-include="'/views/common/footer.html'"></div>
+
+            <!-- build:js(.) scripts/vendor.js -->
+            <!-- bower:js -->
+            <script src="/bower_components/jquery/dist/jquery.js"></script>
+            <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
+            <script src="/bower_components/es6-shim/es6-shim.js"></script>
+            <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="/bower_components/angular/angular.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+            <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+            <script src="/bower_components/angular-animate/angular-animate.js"></script>
+            <script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+            <script src="/bower_components/angular-resource/angular-resource.js"></script>
+            <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+            <script src="/bower_components/angular-touch/angular-touch.js"></script>
+            <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+            <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+            <script src="/bower_components/angular-translate/angular-translate.js"></script>
+            <script src="/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+            <script src="/bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+            <script src="/bower_components/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+            <script src="/bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
+            <script src="/bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+            <script src="/bower_components/angular-component-router/angular_1_router.js"></script>
+            <script src="/bower_components/angular-component-router/ng_route_shim.js"></script>
+            <script src="/bower_components/jquery.xml2json/src/jquery.xml2json.js"></script>
+            <!-- endbower -->
+            <!-- endbuild -->
+
+            <!-- build:js({.tmp,app}) scripts/global.js -->
+            <script src="scripts/global/app.js"></script>
+            <script src="/scripts/common/config.js"></script>
+            <script src="scripts/common/common.controller.js"></script>
+            <script src="scripts/common/common.services.js"></script>
+            <script src="scripts/common/common.config.js"></script>
+            <script src="scripts/common/common.constants.js"></script>
+            <script src="scripts/common/common.http.constants.js"></script>
+            <script src="scripts/common/common-form-tooltip.directive.js"></script>
+            <script src="scripts/common/common-resize.service.js"></script>
+            <script src="scripts/common/common-resize.directive.js"></script>
+            <script src="scripts/common/common-password-strength-bar.directive.js"></script>
+            <script src="scripts/common/common.http.constants.js"></script>
+            <script src="scripts/common/common.search.filter.js"></script>
+            <script src="scripts/common/common.unique.filter.js"></script>
+            <script src="scripts/app-card/app-card.component.js"></script>
+            <script src="scripts/favorites/favorites.services.js"></script>
+            <script src="scripts/app-handler/app-handler.component.js"></script>
+            <script src="scripts/app-handler/app-handler.services.js"></script>
+            <script src="scripts/app-search/app-search.component.js"></script>
+            <!-- endbuild -->
+
+            <script src="scripts/global/routes.js"></script>
+
+            <!-- inject Tag name <sigin></signin>-->
+            <!-- build:js({.tmp,app}) scripts/signin.component.js -->
+            <script src="scripts/signin/signin.services.js"></script>
+            <script src="scripts/signin/signin.component.js"></script>
+            <script src="scripts/signin/signin.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <signup></signup>-->
+            <!-- build:js({.tmp,app}) scripts/signup.component.js -->
+            <script src="/scripts/signup/signup.services.js"></script>
+            <script src="/scripts/signup/signup.component.js"></script>
+            <script src="/scripts/signup/signup-auto-populate.directive.js"></script>
+            <script src="/scripts/signup/signup-validate.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <complete-signup></complete-signup>-->
+            <!-- build:js({.tmp,app}) scripts/complete-signup.component.js -->
+            <script src="/scripts/complete-signup/complete-signup.component.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <change-password></change-password>-->
+            <!-- build:js({.tmp,app}) scripts/change-password.component.js -->
+            <script src="scripts/change-password/change-password.services.js"></script>
+            <script src="scripts/change-password/change-password.component.js"></script>
+            <script src="scripts/change-password/change-password.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <password-expired></password-expired>-->
+            <!-- build:js({.tmp,app}) scripts/password-expired.component.js -->
+            <script src="scripts/password-expired/password-expired.services.js"></script>
+            <script src="scripts/password-expired/password-expired.component.js"></script>
+            <script src="scripts/password-expired/password-expired.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <change-pin></change-pin>-->
+            <!-- build:js({.tmp,app}) scripts/change-pin.component.js -->
+            <script src="scripts/change-pin/change-pin.services.js"></script>
+            <script src="scripts/change-pin/change-pin.component.js"></script>
+            <script src="scripts/change-pin/change-pin.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <forgot-password></forgot-password>-->
+            <!-- build:js({.tmp,app}) scripts/forgot-password.component.js -->
+            <script src="scripts/forgot-password/forgot-password.services.js"></script>
+            <script src="scripts/forgot-password/forgot-password.component.js"></script>
+            <script src="scripts/forgot-password/forgot-password-validate.directive.js"></script>
+            <script src="scripts/forgot-password/forgot-password-resize.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <replace-secureid></replace-secureid>-->
+            <!-- build:js({.tmp,app}) scripts/replace-secureid.component.js -->
+            <script src="scripts/replace-secureid/replace-secureid.services.js"></script>
+            <script src="scripts/replace-secureid/replace-secureid.component.js"></script>
+            <script src="scripts/replace-secureid/replace-secureid.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <complete-set-up></complete-set-up>-->
+            <!-- build:js({.tmp,app}) scripts/complete-setup.component.js -->
+            <script src="scripts/complete-setup/complete-setup.services.js"></script>
+            <script src="scripts/complete-setup/complete-setup.component.js"></script>
+            <script src="scripts/complete-setup/complete-setup.directive.js"></script>
+            <script src="scripts/complete-setup/complete-setup-user-exist.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <set-reset-token></set-reset-token>-->
+            <!-- build:js({.tmp,app}) scripts/set-reset-token.component.js -->
+            <script src="scripts/set-reset-token/set-reset-token.services.js"></script>
+            <script src="scripts/set-reset-token/set-reset-token.component.js"></script>
+            <script src="scripts/set-reset-token/set-reset-token.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <my-company></my-company>-->
+            <!-- build:js({.tmp,app}) scripts/my-company.component.js -->
+            <script src="scripts/my-company/my-company.services.js"></script>
+            <script src="scripts/my-company/my-company.component.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <my-company-deteails></my-company-details>-->
+            <!-- build:js({.tmp,app}) scripts/my-company-details.component.js -->
+            <script src="scripts/my-company-details/my-company-details.services.js"></script>
+            <script src="scripts/my-company-details/my-company-details.component.js"></script>
+            <script src="scripts/my-company-details/my-company-details.filter.js"></script>
+            <script src="scripts/my-company-details/my-company-details.directive.js"></script>
+            <script src="scripts/my-company-details/my-company-details-account.component.js"></script>
+            <script src="scripts/my-company-details/my-company-details-contact.component.js"></script>
+            <script src="scripts/my-company-details/my-company-details-related-company.component.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <favorites></favorites>-->
+            <!-- build:js({.tmp,app}) scripts/favorites.component.js -->
+            <script src="scripts/favorites/favorites.component.js"></script>
+
+            <!-- endbuild -->
+
+            <!-- inject Tag name <notification-panel></notification-panel >-->
+            <!-- build:js({.tmp,app}) scripts/notification-panel.component.js -->
+            <script src="scripts/notification-panel/notification-panel.services.js"></script>
+            <script src="scripts/notification-panel/notification-panel.component.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <user-profile></user-profile>-->
+            <!-- build:js({.tmp,app}) scripts/user-profile.component.js -->
+            <script src="scripts/user-profile/user-profile.services.js"></script>
+            <script src="scripts/user-profile/user-profile.component.js"></script>
+            <script src="scripts/user-profile/user-profile.directive.js"></script>
+            <script src="scripts/user-profile/user-profile-user-exist.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <contact-us></contact-us>-->
+            <!-- build:js({.tmp,app}) scripts/contact-us.component.js -->
+            <script src="scripts/contact-us/contact-us.services.js"></script>
+            <script src="scripts/contact-us/contact-us.component.js"></script>
+            <script src="scripts/contact-us/contact-us-validate.directive.js"></script>
+            <script src="scripts/contact-us/contact-us-file-model.directive.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <store></store>-->
+            <!-- build:js({.tmp,app}) scripts/store.component.js -->
+            <script src="scripts/store/store.routes.js"></script>
+            <script src="scripts/store/store-app-status.service.js"></script>
+            <script src="scripts/store/store.services.js"></script>
+            <script src="scripts/store/store.component.js"></script>
+            <script src="scripts/store/store.filters.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <store-details></store-details>-->
+            <!-- build:js({.tmp,app}) scripts/store-details.component.js -->
+            <script src="scripts/store-details/store-details.component.js"></script>
+            <script src="scripts/store-details/store-details.services.js"></script>
+            <!-- endbuild -->
+
+            <!-- inject Tag name <my-apps></my-apps>-->
+            <!-- build:js({.tmp,app}) scripts/my-apps.component.js -->
+            <script src="scripts/my-apps/my-apps.services.js"></script>
+            <script src="scripts/my-apps/my-apps-list.component.js"></script>
+            <!-- endbuild -->
+
+        </body>
+
+    </html>

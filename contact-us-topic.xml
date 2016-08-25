@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<Extranet total="7" depth="1">
+		<ContactUsTopic id="5582">
+			<name>Change Add Delete</name>
+			<description>Change/Add/Delete (ABU, AMS, GARS, RPCS, SIGIS/MCID, MARP, MUPP, STIP, etc.)</description>
+		</ContactUsTopic>
+		<ContactUsTopic id="5579">
+			<name>Outage or Downtime</name>
+			<description>Outage/Downtime</description>
+		</ContactUsTopic>
+		<ContactUsTopic id="5581">
+			<name>Release Items</name>
+			<description>Release Items</description>
+		</ContactUsTopic>
+		<ContactUsTopic id="5583">
+			<name>Request</name>
+			<description>Request (logs, reports, files, etc.)</description>
+		</ContactUsTopic>
+		<ContactUsTopic id="5580">
+			<name>Specifications and Formatting</name>
+			<description>Specifications and Formatting</description>
+		</ContactUsTopic>
+		<ContactUsTopic id="5578">
+			<name>Stand-in</name>
+			<description>Stand-in</description>
+		</ContactUsTopic>
+		<ContactUsTopic id="5577">
+			<description>Transaction Processing</description>
+			<name>Transaction Processing</name>
+		</ContactUsTopic>
+	</Extranet>

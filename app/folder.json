@@ -1,0 +1,11 @@
+{
+    "public": {
+        "root": ["resources"],
+        "views": ["signup", "complete-signup", "signin", "password-expired", "common", "forgot-password", "replace-secureid"],
+        "scripts": ["global", "signup", "complete-signup", "signin", "password-expired", "common", "forgot-password", "replace-secureid"]
+    },
+    "protected": {
+        "views": ["change-password", "change-pin", "complete-setup", "dashboard", "my-company", "my-company-details", "set-reset-token", "notification-panel", "user-profile", "contact-us", "favorites", "store", "store-details", "my-apps", "app-handler", "app-card", "app-search"],
+        "scripts": ["change-password", "change-pin", "complete-setup", "dashboard", "my-company", "my-company-details", "set-reset-token", "notification-panel", "user-profile", "contact-us", "favorites", "store", "store-details", "my-apps", "app-handler"]
+    }
+}

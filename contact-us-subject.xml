@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Extranet total="14" depth="1">
+  <ContactUsSubject id="5564">
+    <description>Acceptance</description>
+    <name>Acceptance</name>
+  </ContactUsSubject>
+  <ContactUsSubject id="5565">
+    <name>Authorization</name>
+    <description>Authorization</description>
+  </ContactUsSubject>
+  <ContactUsSubject id="5569">
+    <name>Billing</name>
+    <description>Billing</description>
+  </ContactUsSubject>
+  <ContactUsSubject id="5571">
+    <name>Brand Impact</name>
+    <description>Brand Impact</description>
+  </ContactUsSubject>
+  <ContactUsSubject id="5567">
+    <description>Clearing</description>
+    <name>Clearing</name>
+  </ContactUsSubject>
+  <ContactUsSubject id="5572">
+    <name>Commercial or Corporate Products</name>
+    <description>Commercial/Corporate Products</description>
+  </ContactUsSubject>
+  <ContactUsSubject id="5574">
+    <name>MasterCard Connect</name>
+    <description>MasterCard Connect</description>
+  </ContactUsSubject>
+  <ContactUsSubject id="5573">
+    <name>Mobile and eCommerce</name>
+    <description>Mobile &amp; eCommerce</description>
+  </ContactUsSubject>
+  <ContactUsSubject id="5576">
+    <name>Other</name>
+    <description>Other</description>
+  </ContactUsSubject>
+  <ContactUsSubject id="6522">
+    <name>RPPS</name>
+    <description>RPPS</description>
+  </ContactUsSubject>
+  <ContactUsSubject id="5570">
+    <description>Risk</description>
+    <name>Risk</name>
+  </ContactUsSubject>
+  <ContactUsSubject id="5575">
+    <description>SecureCode</description>
+    <name>SecureCode</name>
+  </ContactUsSubject>
+  <ContactUsSubject id="5568">
+    <description>Settlement</description>
+    <name>Settlement</name>
+  </ContactUsSubject>
+  <ContactUsSubject id="5566">
+    <description>Single Message</description>
+    <name>Single Message</name>
+  </ContactUsSubject>
+</Extranet>
