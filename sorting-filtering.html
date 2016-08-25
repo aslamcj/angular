@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <style>
+      .friends {
+  border-collapse: collapse;
+}
+
+.friends th {
+  border-bottom: 1px solid;
+}
+.friends td, .friends th {
+  border-left: 1px solid;
+  padding: 5px 10px;
+}
+.friends td:first-child, .friends th:first-child {
+  border-left: none;
+}
+
+.sortorder:after {
+  content: '\25b2';   // BLACK UP-POINTING TRIANGLE
+}
+.sortorder.reverse:after {
+  content: '\25bc';   // BLACK DOWN-POINTING TRIANGLE
+}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-app="orderByExample3">
+  <div ng-controller="ExampleController">
+  <pre>Sort by = {{propertyName}}; reverse = {{reverse}}</pre>
+  <hr/>
+  <button ng-click="sortBy(null)">Set to unsorted</button>
+  <hr/>
+  <table class="friends">
+    <tr>
+      <th>
+        <button ng-click="sortBy('name')">Name</button>
+        <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+      </th>
+      <th>
+        <button ng-click="sortBy('phone')">Phone Number</button>
+        <span class="sortorder" ng-show="propertyName === 'phone'" ng-class="{reverse: reverse}"></span>
+      </th>
+      <th>
+        <button ng-click="sortBy('age')">Age</button>
+        <span class="sortorder" ng-show="propertyName === 'age'" ng-class="{reverse: reverse}"></span>
+      </th>
+    </tr>
+    <tr ng-repeat="friend in friends">
+      <td>{{friend.name}}</td>
+      <td>{{friend.phone}}</td>
+      <td>{{friend.age}}</td>
+    </tr>
+  </table>
+</div>
+</body>
+
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+     (function(angular) {
+  'use strict';
+angular.module('orderByExample3', [])
+  .controller('ExampleController', ['$scope', 'orderByFilter', function($scope, orderBy) {
+    var friends = [
+      {name: 'John',   phone: '555-1212',  age: 10},
+      {name: 'Mary',   phone: '555-9876',  age: 19},
+      {name: 'Mike',   phone: '555-4321',  age: 21},
+      {name: 'Adam',   phone: '555-5678',  age: 35},
+      {name: 'Julie',  phone: '555-8765',  age: 29}
+    ];
+
+    $scope.propertyName = 'age';
+    $scope.reverse = true;
+    $scope.friends = orderBy(friends, $scope.propertyName, $scope.reverse);
+
+    $scope.sortBy = function(propertyName) {
+      $scope.reverse = (propertyName !== null && $scope.propertyName === propertyName)
+          ? !$scope.reverse : false;
+      $scope.propertyName = propertyName;
+      $scope.friends = orderBy(friends, $scope.propertyName, $scope.reverse);
+    };
+  }]);
+})(window.angular);
+
+
+    </script>
+</html>
